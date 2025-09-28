@@ -26,7 +26,7 @@ Installation Guide
 ### Step 1: Download/Clone the Project
 ```bash
 # If using git:
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/KingAtomic7/keylogger_detection_safe_project.git)
 cd keylogger_detection_safe_project
 
 # Or download and extract the ZIP file to your desired location
