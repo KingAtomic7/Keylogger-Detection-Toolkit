@@ -1,4 +1,4 @@
-# Keylogger Detection Toolkit v2.0
+# Keylogger Detection 
 
 > **Educational & Defensive Use Only** — No malware, no system-wide hooks, no background processes.
 
@@ -9,8 +9,8 @@ A clean, well-structured Python toolkit for learning how keylogger detection wor
 ## Contents
 
 ```
-keylogger_detection/
-├── keylogger_detection/
+keylogger-detection/
+├── keylogger-detection/
 │   ├── __init__.py        — Package metadata
 │   ├── __main__.py        — python -m keylogger_detection entry point
 │   ├── cli.py             — Unified CLI (argparse)
@@ -67,19 +67,19 @@ pip install -e .
 
 ```bash
 # Basic scan (threshold ≥ 30)
-python -m keylogger_detection scan
+python -m keylogger-detection scan
 
 # Raise threshold to reduce false positives
-python -m keylogger_detection scan --threshold 50
+python -m keylogger-detection scan --threshold 50
 
 # Save results to JSON
-python -m keylogger_detection scan --json logs/scan_report.json
+python -m keylogger-detection scan --json logs/scan_report.json
 
 # Run as root for full visibility (Linux / macOS)
-sudo python -m keylogger_detection scan
+sudo python -m keylogger-detection scan
 
 # Windows — run PowerShell as Administrator
-python -m keylogger_detection scan
+python -m keylogger-detection scan
 ```
 
 **Score bands:**
@@ -132,7 +132,7 @@ pip install pytest pytest-cov
 python -m pytest tests/ -v
 
 # Run with coverage report
-python -m pytest tests/ -v --cov=keylogger_detection --cov-report=term-missing
+python -m pytest tests/ -v --cov=keylogger-detection --cov-report=term-missing
 
 # Run a single test file
 python -m pytest tests/test_scanner.py -v
